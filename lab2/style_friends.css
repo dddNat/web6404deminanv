@@ -1,0 +1,187 @@
+@font-face { /* Подключение шрифта*/
+	font-family: 'DaysSansBlack';
+	src: url('fonts/DaysSansBlack/dayssansblack.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/DaysSansBlack/dayssansblack.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/DaysSansBlack/dayssansblack.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/DaysSansBlack/dayssansblack.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/DaysSansBlack/dayssansblack.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/DaysSansBlack/dayssansblack.svg#dayssansblack') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body {
+    margin: 0;
+}
+
+.content { /*Содержимое страниц*/
+    margin: 0px 70px;
+    text-align: center; /*Выравнивание текста внутри блока*/
+}
+
+#index-back { /*Фон для index*/
+    background-image:url(pictures/index_background.jpg);
+    height: 100vh; /*100% высоты области просмотра*/
+    background-size: cover; /*покрыть область элемента полностью*/
+    overflow: hidden; /*без скролла*/
+}
+
+.nav { /*строка навигации*/
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.nav-item { /*элемент строки навигации*/
+    text-decoration: none; /*убрать подчёркивание*/
+    margin: 40px;
+}
+
+.nav-item:hover { /*реакция на курсор*/
+    color: #9E9E9E;
+}
+
+.text { /*для всего текста*/
+    font-family: 'DaysSansBlack';
+    font-weight: 400;
+    color: #fff;
+}
+
+#index-heading { /*только для заголовка в index*/
+    display: flex; /*гибкая компоновка*/
+    flex-direction: column; /*направление элементов*/
+    align-items: center; /*выравнивание элементов*/
+    margin-top: 60px;
+}
+
+#index-heading-img {
+    height: 60px;
+}
+
+#index-description {
+    margin-left: 300px;
+    margin-top: 10px;
+    position: absolute; /*позиция относительно области просмотра*/
+}
+
+#index-paper-img {
+    height: 190px;
+}
+
+#index-description-text {
+    color: #393939;
+    font-size: 12px;
+    position: absolute; /*позиция относительно index-description*/
+    top: 0;
+    text-align: justify;/*выравнивание по ширине*/
+    padding: 35px;
+}
+
+#index-img-orange {
+    height: 450px;
+}
+
+.back { /*Фон для characters и episodes*/
+    background-image:url(pictures/characters_background.png);
+    background-size: cover;
+    background-attachment: fixed; /*Неподвижный фон*/
+    overflow-y: auto;
+}
+
+.heading { /*Общий заголовок*/
+    margin: 50px;
+}
+
+.yellow {
+    color: #E49F30;
+}
+
+.orange {
+    color: #D74F14;
+}
+
+.item { /*Элемент картинка + текст*/
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.reverse { /*Поменять местами*/
+    flex-direction: row-reverse;
+}
+
+.item-img {
+    transition: transform 0.3s; /*Плавное изменение*/
+}
+
+.item-img:hover {
+    transform: scale(1.05); /*Изменение размера при наведении*/
+    filter: brightness(1.1); /*Изменение яркости при наведении*/
+}
+
+.name { /*Для имён героев*/
+    font-size: 30px;
+}
+
+.facts {
+    font-size: 16px;
+    text-align: left;
+}
+
+li { /*Для всех пунктах в списках*/
+    margin: 10px 0;
+}
+
+.item-center {
+    justify-content: center;
+}
+
+.item-gif {
+    display: none; /*Скрыть элемент*/
+    position: absolute;
+    width: 300px;
+    height: auto;
+    transform: translate(200%,-80%); /*Переместить элемент по X и по Y*/
+}
+
+.item-text {
+    padding: 20px;
+}
+
+tr {
+    text-align: left;
+}
+
+.item-text:hover .item-gif { /*Меняем item-gif, когда наводим на item-text*/
+    display: block;
+}
+
+.item-text:hover {
+    color: #D74F14;
+}
+
+#statistics { /*Фон для statistics*/
+    background-image:url(pictures/characters_background.png);
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#statistic-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistic-text {
+    padding: 10px;
+    text-align: center;
+}
+
+.item-point {
+    width: 20px;
+}
+
+#cup {
+    height: 200px;
+    margin-left: 40px;
+    
+}
