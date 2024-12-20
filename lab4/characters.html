@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='style_friends.css'>
+    <title>Characters</title>
+    <script src="asyncFetchData.js" defer></script>
+</head>
+<body>
+    <div id='characters'>
+        <div class ='content'>
+            <div class='nav'>
+                <a class='nav-item text' href="index.html">ГЛАВНАЯ СТРАНИЦА</a>
+                <a class='nav-item text' href="episodes.html">ГЛАВНЫЕ ЭПИЗОДЫ</a>
+                <a class='nav-item text' href="statistics.html">ГЛАВНАЯ СТАТИСТИКА</a>
+                <a class='nav-item text' href="form.html">ГЛАВНЫЙ ВОПРОС</a>
+            </div>
+            <h1 class='heading text'>
+                Чем запомнились герои “<span class='animation'>друзей</span>”?
+            </h1>
+            <button onclick="fetchData()" class='text' id='characters-button'>Узнать!</button>
+            <div class='grid'>
+                <div class='item'>
+                    <p class='name orange text'>Моника</p>
+                    <img class='item-img' src="pictures/monika.png" alt="Моника">
+                    <ol class='facts text'>
+                        <!-- Сюда загружаются факты -->
+                    </ol>
+                </div>
+                <div class='item'>
+                    <p class='name orange text'>Рейчел</p>
+                    <img class='item-img' src="pictures/rachel.png" alt="Рейчел">
+                    <ol class='facts text'>
+                        <!-- Сюда загружаются факты -->
+                    </ol>
+                </div>
+                <div class='item'>
+                    <p class='name orange text'>Росс</p>
+                    <img class='item-img' src="pictures/ross.png" alt="Росс">
+                    <ol class='facts text'>
+                        <!-- Сюда загружаются факты -->
+                    </ol>
+                </div>
+                <div class='item'>
+                    <p class='name orange text'>Чендлер</p>
+                    <img class='item-img' src="pictures/chandler.png" alt="Чендлер">
+                    <ol class='facts text'>
+                        <!-- Сюда загружаются факты -->
+                    </ol>
+                </div>
+                <div class='item'>
+                    <p class='name orange text'>Фиби</p>
+                    <img class='item-img' src="pictures/fibi.png" alt="Фиби">
+                    <ol class='facts text'>
+                        <!-- Сюда загружаются факты -->
+                    </ol>
+                </div>
+                <div class='item'>
+                    <p class='name orange text'>Джо</p>
+                    <img class='item-img' src="pictures/joe.png" alt="Джо">
+                    <ol class='facts text'>
+                        <!-- Сюда загружаются факты -->
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
